@@ -1,172 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Webpage</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Udit Patel | Profile</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html{
+  scroll-behavior:smooth;
+}
+</style>
+
 </head>
-<body>
-    <!-- -------------------------------------NAVIGATION BAR------------------------------------- -->
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Udit Patel</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>  
-                        <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
 
-    <!-- -------------------------------------HEAD BAR------------------------------------- -->
-    <section class="text-center p-5 " id="home" style="background-color: rgb(88, 88, 88);">
-        <div class="container">
-            <h1>Hello, I'm Udit 👋</h1>
-            <p class="lead">
-              A Computer Science student passionate about Web Development,
-              UI/UX Design and Technology.
-            </p>
-            <a class="btn btn-primary" href="#about">Know More</a>
-        </div>
-    </section>
+<body class="bg-gray-100 font-sans">
 
-    <!-- -------------------------------------PROFILE------------------------------------- -->
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 w-full bg-gray-900 text-white shadow-lg z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-lg">Udit Patel</h1>
 
-    <section class="p-5" id="about">
-        <div class="container">
-            <div class="row align-items-center">
+    <div class="space-x-6">
+      <a href="#home" class="hover:text-blue-400">Home</a>
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#skills" class="hover:text-blue-400">Skills</a>
+      <a href="#project" class="hover:text-blue-400">Project</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </div>
+  </div>
+</nav>
 
-                <div class="col-md-4">
-                    <img src="UditPatel.jpg.jpeg" class="img-fluid rounded w-50 border border-5 border-dark" alt="Profile Image">
-                </div>
+<!-- ================= HERO ================= -->
+<section id="home" class="pt-28 pb-20 text-center bg-blue-600 text-white">
+  <h1 class="text-4xl font-bold">Hello, I'm Udit 👋</h1>
+  <p class="mt-4 text-lg">
+    Computer Science student passionate about Web Development & UI Design.
+  </p>
 
-                <div class="col-md-8">
-                    <h2>About Me</h2>
-                    <p>
-                        I am a B.Tech Computer Science Engineering student who loves
-                        creating web designs and learning new technologies. I enjoy
-                        building user-friendly applications and improving my frontend
-                        development skills.
-                    </p>
-                </div>
+  <a href="#about"
+     class="inline-block mt-6 bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+     Know More ↓
+  </a>
+</section>
 
-            </div>
-        </div>
-    </section>  
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-16 max-w-6xl mx-auto px-6">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    
+    <img src="images/profile.jpg"
+         class="w-60 mx-auto rounded-full shadow-lg">
 
-    <!-- -------------------------------------SKILLS SECTION------------------------------------- -->
+    <div>
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p>
+        I am a B.Tech Computer Science Engineering student who enjoys
+        building modern web interfaces and learning frontend technologies.
+        I love designing clean UI and improving user experience.
+      </p>
+    </div>
 
-    <section class="p-5" id="skills" style="background-color: rgb(88, 88, 88);">
-        <div class="container text-center">
-            <h2>My Skills</h2>
-            <ul class="list-group mt-4">
-                <li class="list-group-item">HTML</li>
-                <li class="list-group-item">CSS</li>
-                <li class="list-group-item">Bootstrap</li>
-                <li class="list-group-item">Figma UI Design</li>
-                <li class="list-group-item">Java Programming</li>
-            </ul>
-        </div>
-    </section>
+  </div>
+</section>
 
-    <!-- -------------------------------------EDUCATION SECTION------------------------------------- -->
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="bg-white py-16 text-center">
+  <h2 class="text-3xl font-bold mb-6">My Skills</h2>
 
-    <section class="p-5" id="education">
-        <div class="container">
-            <h2 class="text-center">Education</h2>
-            <table class="table table-bordered table-striped mt-4">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Year</th>
-                        <th>Course</th>
-                        <th>Institute</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2023 - Present</td>
-                        <td>B.Tech CSE</td>
-                        <td>Silver Oak University</td>
-                    </tr>
-                    <tr>
-                        <td>2021 - 2023</td>
-                        <td>HSC</td>
-                        <td>UTTKARSH HIGH SCHOOL</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+  <div class="max-w-md mx-auto space-y-3">
+    <div class="p-3 bg-gray-200 rounded">HTML</div>
+    <div class="p-3 bg-gray-200 rounded">CSS</div>
+    <div class="p-3 bg-gray-200 rounded">Tailwind CSS</div>
+    <div class="p-3 bg-gray-200 rounded">Bootstrap</div>
+    <div class="p-3 bg-gray-200 rounded">Java</div>
+  </div>
+</section>
 
-        <!-- -------------------------------------PROJECT SECTION------------------------------------- -->
+<!-- ================= PROJECT ================= -->
+<section id="project" class="py-16 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-8">BorrowIT Project</h2>
 
-    <section class="p-5" id="Projects" style="background-color: rgb(88, 88, 88);">
-        <div class="container">
-            <h2 class="text-center">Projects</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Chat Web App UI</h5>
-                            <p class="card-text">Designed a modern chat interface using Figma.</p>
-                            <a href="project1.html" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">BorrowIT App</h5>
-                            <p class="card-text">UI prototype for gadget rental platform.</p>
-                            <a href="project1.html" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </section>
+  <!-- Carousel -->
+  <div class="relative max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
 
-    <!-- -------------------------------------CONTACT SECTION------------------------------------- -->
+    <div id="carousel" class="flex transition-transform duration-500">
 
-    <section class="p-5" id="contact">
-        <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <form class="mt-4">
-                <div class="mb-3">
-                     <label>Name</label>
-                     <input type="text" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label>Email</label>
-                    <input type="email" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label>Message</label>
-                    <textarea class="form-control"></textarea>
-                </div>
-                <button class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
+      <!-- CHANGE IMAGE PATHS -->
+      <img src="Android Compact - 1.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 2.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 3.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 4.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 5.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 6.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 7.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 8.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 9.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 10.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 11.png" class="w-full flex-shrink-0">
+      <img src="Android Compact - 12.png" class="w-full flex-shrink-0">
 
-    <!-- -------------------------------------FOOTER------------------------------------- -->
+    </div>
 
-    <section class="bg-dark text-white text-center p-3">
-        <p>© 2026 Udit Patel | Profile Website</p>
-    </section>
+    <!-- Buttons -->
+    <button onclick="prevSlide()"
+      class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded">
+      ❮
+    </button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+    <button onclick="nextSlide()"
+      class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded">
+      ❯
+    </button>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-16 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+
+  <form class="max-w-md mx-auto space-y-4">
+    <input type="text" placeholder="Name"
+      class="w-full p-3 border rounded">
+
+    <input type="email" placeholder="Email"
+      class="w-full p-3 border rounded">
+
+    <textarea placeholder="Message"
+      class="w-full p-3 border rounded"></textarea>
+
+    <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+      Send Message
+    </button>
+  </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white text-center p-4">
+  © 2026 Udit Patel | Profile Website
+</footer>
+
+<!-- ================= CAROUSEL SCRIPT ================= -->
+<script>
+let index = 0;
+const carousel = document.getElementById("carousel");
+const totalSlides = carousel.children.length;
+
+function updateCarousel(){
+  carousel.style.transform =
+    `translateX(-${index * 100}%)`;
+}
+
+function nextSlide(){
+  index = (index + 1) % totalSlides;
+  updateCarousel();
+}
+
+function prevSlide(){
+  index = (index - 1 + totalSlides) % totalSlides;
+  updateCarousel();
+}
+</script>
+
 </body>
 </html>
