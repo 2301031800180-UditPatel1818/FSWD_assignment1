@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Webpage</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- -------------------------------------NAVIGATION BAR------------------------------------- -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Udit Patel</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- -------------------------------------HEAD BAR------------------------------------- -->
+    <section class="text-center p-5 " id="home" style="background-color: rgb(88, 88, 88);">
+        <div class="container">
+            <h1>Hello, I'm Udit 👋</h1>
+            <p class="lead">
+              A Computer Science student passionate about Web Development,
+              UI/UX Design and Technology.
+            </p>
+            <a class="btn btn-primary" href="#about">Know More</a>
+        </div>
+    </section>
+
+    <!-- -------------------------------------PROFILE------------------------------------- -->
+
+    <section class="p-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-4">
+                    <img src="UditPatel.jpg.jpeg" class="img-fluid rounded w-50 border border-5 border-dark" alt="Profile Image">
+                </div>
+
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a B.Tech Computer Science Engineering student who loves
+                        creating web designs and learning new technologies. I enjoy
+                        building user-friendly applications and improving my frontend
+                        development skills.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>  
+
+    <!-- -------------------------------------SKILLS SECTION------------------------------------- -->
+
+    <section class="p-5" id="skills" style="background-color: rgb(88, 88, 88);">
+        <div class="container text-center">
+            <h2>My Skills</h2>
+            <ul class="list-group mt-4">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">Figma UI Design</li>
+                <li class="list-group-item">Java Programming</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- -------------------------------------EDUCATION SECTION------------------------------------- -->
+
+    <section class="p-5" id="education">
+        <div class="container">
+            <h2 class="text-center">Education</h2>
+            <table class="table table-bordered table-striped mt-4">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Year</th>
+                        <th>Course</th>
+                        <th>Institute</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023 - Present</td>
+                        <td>B.Tech CSE</td>
+                        <td>Silver Oak University</td>
+                    </tr>
+                    <tr>
+                        <td>2021 - 2023</td>
+                        <td>HSC</td>
+                        <td>UTTKARSH HIGH SCHOOL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+        <!-- -------------------------------------PROJECT SECTION------------------------------------- -->
+
+    <section class="p-5" id="Projects" style="background-color: rgb(88, 88, 88);">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Chat Web App UI</h5>
+                            <p class="card-text">Designed a modern chat interface using Figma.</p>
+                            <a href="project1.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">BorrowIT App</h5>
+                            <p class="card-text">UI prototype for gadget rental platform.</p>
+                            <a href="project1.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- -------------------------------------CONTACT SECTION------------------------------------- -->
+
+    <section class="p-5" id="contact">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form class="mt-4">
+                <div class="mb-3">
+                     <label>Name</label>
+                     <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Message</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <button class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- -------------------------------------FOOTER------------------------------------- -->
+
+    <section class="bg-dark text-white text-center p-3">
+        <p>© 2026 Udit Patel | Profile Website</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+</body>
+</html>
