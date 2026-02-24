@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+ html {
+    scroll-behavior: smooth;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: contain;
+}
